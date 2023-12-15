@@ -46,11 +46,9 @@ body{
   position: relative;
 }
 
-#logo{
-  width: 55px;
-  height: 55px;
-  margin-left: 60px;
-  margin-top: 4px;}
+
+
+    #logo{height: 50px;width: 50px;margin-bottom: 25px;margin-top: 10px;position: relative;}
 
 h1{
   margin-left: auto;
@@ -108,11 +106,9 @@ img{
   
 }
 
-img:hover {
-  scale: 0.9;
-  
-}
+.icono:hover{scale: 0.9;cursor: pointer;}
+/*
 #inventarioimg{border: 1px solid #18022d;padding: 5px;}
-
+*/
 
 
