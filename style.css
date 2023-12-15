@@ -1,0 +1,25 @@
+body{text-align: center;font-family: Arial, Helvetica, sans-serif;background-color: #11011b; color: #492877;}
+
+#contenedor{display: flex;flex-direction: column;position:relative;height: 100%;width: 100%;padding-top: 100px;}
+
+#ventanalogin{width: 400px;height: 300px;border: 1px solid #492877;margin: auto;inset: 0;position: relative;display: flex;flex-direction: column;margin-top: 120px;border-radius: 20px;background-color: #18022d;box-shadow: #1a0241 1px 1px 4px 4px;}
+
+#adminimglogin{width: 80px;height: 80px;background-color: white;margin-right: auto;margin-left: auto;margin-bottom: 20px;margin-top: 40px;border-radius: 50%;}
+#adminimg{height: 60px;width: 60px;margin-top: 7px;margin-left: 7px;}
+#inpusuario{width: 140px;margin-left: auto;margin-right: auto;margin-bottom: 5px;color: #11011b;text-align: center;height: 20px;border-radius: 5px;border: none;}
+#inpcontrasena{width: 140px;margin-left: auto;margin-right: auto;margin-bottom: 10px;color: #11011b;text-align: center;height: 20px;border-radius: 5px;border: none;}
+#lboton{width: 80px;margin-left: auto;margin-right: auto;color: #11011b;border: none;height: 20px;border-radius: 5px;}
+button:active{scale: 0.95;}
+
+/*Error login*/
+#errorlogin{color: red;font-size: 12px;animation: aparecer 0.1s linear;display: none;}
+
+/*Animaciones*/
+@keyframes aparecer {
+    0%{scale: 0;}
+    25%{scale: 0.25;}
+    50%{scale: 0.5;}
+    100%{scale: 1;}}
+
+
+

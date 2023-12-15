@@ -1,0 +1,26 @@
+body{font-family: Arial, Helvetica, sans-serif;text-align: center;}
+
+#contenedor{background-color: #18022d;width: 100%;height: 100%;margin: 0;inset: 0;position: absolute;overflow: hidden;}
+
+
+#cabecera{height: 60px;width: 95%;background-color: #684396;position: absolute;margin: 0;inset: 0;margin-left: auto;text-align: center; display: flex;min-height: 60px;z-index: 2;max-height: 60px;}
+
+
+#navegador{height: 100%;width: 70px;background-color: #684396;position: absolute;min-width: 60px;z-index: 3;}
+
+.icono{height: 50px;width: 50px;margin-bottom: 25px;margin-top: 10px;position: relative;}
+
+#logo{height: 50px;width: 50px;margin-bottom: 25px;margin-top: 10px;position: relative;}
+
+h1{margin-left: auto;margin-right: auto; font-weight: bold;font-size: 40px;margin-bottom: auto;margin-top: auto;color: #18022d;}
+
+#ventanainicio{height: 92%;width: 100%;background-color: #18022d;position: absolute;margin-top: 4%;z-index: 1;}
+.icono:hover{scale: 0.9;cursor: pointer;}
+
+#admimg{height: 120px;width: 120px;margin-top: 14px;margin-left: 5px;}
+#perfil{height: 150px;width: 150px;background-color: #cbc0d8;border-radius: 50%;border: 1px solid #684396;box-shadow: #1a0241 1px 1px 4px 4px;}
+#contperf{margin-top: 40px;margin-left: 80px;height: 150px;width: 150px;color:#cbc0d8 ;}
+
+#cerrarsesion{border: none;height: 30px;background-color: #cbc0d8;font-size: 16px;font-weight: bold;border-radius: 14px;}
+#cerrarsesion:hover{background-color: #9a80b8;cursor: pointer;}
+#cerrarsesion:active{scale: 0.95;}
