@@ -30,7 +30,6 @@ body{
 
 
 #navegador{
-  height: 100%;
   width: 5%;
   background-color: #684396;
   position: absolute;
@@ -49,7 +48,7 @@ body{
 #logo{
   width: 55px;
   height: 55px;
-  margin-left: 60px;
+  margin-left: 0px;
   margin-top: 4px;}
 
 h1{
@@ -116,13 +115,18 @@ img:hover {
 }
 
 .grid-container {
-  padding-left: 70px;
+  padding-left: 78px;
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
   grid-auto-rows: 200px;
   grid-auto-columns: 200px;
   grid-gap: 50px;
   padding-top: 40px;
+  padding-right: 15px;
+}
+#ventanaPrincipal {
+  overflow: auto;
+  max-height: 100%; /* Establece una altura máxima para que aparezca la barra de desplazamiento cuando sea necesario */
 }
 
 img {

@@ -4,9 +4,15 @@ document.addEventListener("DOMContentLoaded", function () {
       { nombre: "hamburguesa", imagen: "img/hambur.jpg", cantidad: 5 },
       { nombre: "Empanada", imagen: "img/empanada.jpg", cantidad: 8 },
       { nombre: "Alfajor", imagen: "img/alfajor.jpg", cantidad: 3 },
-      { nombre: "Alfajor", imagen: "img/alfajor.jpg", cantidad: 3 },
-      { nombre: "Alfajor", imagen: "img/alfajor.jpg", cantidad: 3 },
-      { nombre: "Alfajor", imagen: "img/alfajor.jpg", cantidad: 3 },
+      { nombre: "Media Luna", imagen: "img/mediaLuna.jpg", cantidad: 3 },
+      { nombre: "Lomito Arabe", imagen: "img/lomitoArabe.jpg", cantidad: 3 },
+      { nombre: "Cupcake", imagen: "img/cupkape.jpg", cantidad: 3 },
+      { nombre: "Pizza", imagen: "img/pizza.jpg", cantidad: 3 },
+      { nombre: "Tarta Dulce", imagen: "img/tarta.jpg", cantidad: 3 },
+      { nombre: "Tarta Salada", imagen: "img/tartaSalada.jpg", cantidad: 3 },
+      { nombre: "Pionono", imagen: "img/pionono.jpg", cantidad: 3 },
+      { nombre: "Pastel", imagen: "img/pastel.jpg", cantidad: 3 },
+      { nombre: "Sanwich de Lomito", imagen: "img/sawichLomito.jpg", cantidad: 3 },
       // Agrega más objetos según sea necesario
     ];
 
@@ -25,6 +31,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
       // Agrega la imagen
       const imagenElemento = document.createElement("img");
+      imagenElemento.className = "alimento";
       imagenElemento.src = item.imagen;
 
       // Agrega la cantidad
