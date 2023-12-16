@@ -2,38 +2,47 @@ let empleados = [{
     nombre: "Roberto Ortiz",
     cargo: "Pastelero Jefe",
     salario:5000000,
+    pordia:166000,
 },{
     nombre: "Valeria Torres",
     cargo: "Asistente de Pasteleria",
     salario:5000000,
+    pordia:166000,
 },{
     nombre: "Natalia Ferreira",
     cargo: "Chef de Cocina",
     salario:3000000,
+    pordia:100000,
 },{
     nombre: "Marta Gonzales",
     cargo: "Asistente de Cocina",
     salario:3000000,
+    pordia:100000,
 },{
     nombre: "Luis Silva",
     cargo: "Limpiador de Cocina",
     salario:2500000,
+    pordia:83000,
 },{
     nombre: "Carlos Gimenez",
     cargo: "Repartidor a domicilio",
     salario:3000000,
+    pordia:100000,
 },{
     nombre: "Maria Diaz",
     cargo: "Vendedor",
     salario:6000000,
+    pordia:200000,
 },{
     nombre: "Pedro Benitez",
     cargo: "Repositor de Mercaderia",
     salario:4000000,
+    pordia:133000,
 },{
     nombre: "Ana Ramirez",
     cargo: "Administrador",
     salario:8000000,
+    pordia:266000,
 }];
 
 //Botones
@@ -60,56 +69,99 @@ let diasTrab = document.getElementById('diastrabajados');
 //Funciones
 
 function ver(){
-for (let i=0;i<empleados.length;i++){console.log("Nombre: "+empleados[i].nombre);
+for (let i=0;i<empleados.length;i++){
 let nombrepersonal=document.createElement("li");nombrepersonal.textContent=empleados[i].nombre;nomEmp.appendChild(nombrepersonal);
 let diastrabajados=document.createElement("input");diastrabajados.id="input_"+i;diasTrab.appendChild(diastrabajados);
 }
-console.log("================================================");
 
-for(let i=0;i<empleados.length;i++){console.log("Cargo: "+empleados[i].cargo);
+
+for(let i=0;i<empleados.length;i++){
 let cargopersonal=document.createElement("li");cargopersonal.textContent=empleados[i].cargo;cargEmp.appendChild(cargopersonal)}
-console.log("================================================")
 
-for(let i=0;i<empleados.length;i++){console.log("Sueldo: "+empleados[i].salario);
+
+for(let i=0;i<empleados.length;i++){
 let sueldopersonal=document.createElement("li");sueldopersonal.textContent=empleados[i].salario+" Gs";sueldEmp.appendChild(sueldopersonal)}
 }
 
-//En proceso...
-//function calcular(){
 
-    
-//        let inp0 = document.getElementById('input_0').value;
-//        let inp1 = document.getElementById('input_1').value;
-//        let inp2 = document.getElementById('input_2').value;
-//        let inp3 = document.getElementById('input_3').value;
-//        let inp4 = document.getElementById('input_4').value;
-//        let inp5 = document.getElementById('input_5').value;
-//        let inp6 = document.getElementById('input_6').value;
-//        let inp7 = document.getElementById('input_7').value;
-//        let inp8 = document.getElementById('input_8').value;
-//
-//    if(inp0>0&&inp1>0&&inp2>0&&inp3>0&&inp4>0&&inp5>0&&inp6>0&&inp7>0&&inp8>0){
-//
-//        let diarioarray=[];
-//
-//        diarioarray.push(empleados[0].salario/30)
-//
-//        console.log(empleado[0].salario/30)
-//
-//        console.log("si se puede calcular")
+let OCULTARERROR = document.getElementById('ocultar');
+function calcular(){
+
+    let totalsueldo = document.getElementById('Totalsueldo');
+        let inp0 = document.getElementById('input_0').value;
+        let inp1 = document.getElementById('input_1').value;
+        let inp2 = document.getElementById('input_2').value;
+        let inp3 = document.getElementById('input_3').value;
+        let inp4 = document.getElementById('input_4').value;
+        let inp5 = document.getElementById('input_5').value;
+        let inp6 = document.getElementById('input_6').value;
+        let inp7 = document.getElementById('input_7').value;
+        let inp8 = document.getElementById('input_8').value;
+
+    if(inp0>0&&inp1>0&&inp2>0&&inp3>0&&inp4>0&&inp5>0&&inp6>0&&inp7>0&&inp8>0){
+
+        OCULTARERROR.style.display='none';
+
+
         
+        
+        let robertodia = empleados[0].pordia*inp0; 
+        let robdia = document.createElement("li");
+        robdia.textContent=robertodia;
+        totalsueldo.appendChild(robdia);
 
-//inp0*pordia;
-//inp1*pordia;
-//inp2*pordia;
-//inp3*pordia;
-//inp4*pordia;
-//inp5*pordia;
-//inp6*pordia;
-//inp7*pordia;
-//inp8*pordia;
+        let segundia = empleados[1].pordia*inp1; 
+        let segdia = document.createElement("li");
+        segdia.textContent=segundia;
+        totalsueldo.appendChild(segdia);
+
+        let tercerdia = empleados[2].pordia*inp2; 
+        let terdia = document.createElement("li");
+        terdia.textContent=tercerdia;
+        totalsueldo.appendChild(terdia);
+
+        let cuartodia = empleados[3].pordia*inp3; 
+        let cuadia = document.createElement("li");
+        cuadia.textContent=cuartodia;
+        totalsueldo.appendChild(cuadia);
+
+        let quintodia = empleados[4].pordia*inp4; 
+        let quindia = document.createElement("li");
+        quindia.textContent=quintodia;
+        totalsueldo.appendChild(quindia);
+
+        let sextdia = empleados[5].pordia*inp5; 
+        let sexdia = document.createElement("li");
+        sexdia.textContent=sextdia;
+        totalsueldo.appendChild(sexdia);
+
+        let sevendia = empleados[6].pordia*inp6; 
+        let sevdia = document.createElement("li");
+        sevdia.textContent=sevendia;
+        totalsueldo.appendChild(sevdia);
+
+        let octavodia = empleados[7].pordia*inp7; 
+        let octdia = document.createElement("li");
+        octdia.textContent=octavodia;
+        totalsueldo.appendChild(octdia);
+
+        let novenodia = empleados[8].pordia*inp8; 
+        let novdia = document.createElement("li");
+        novdia.textContent=novenodia;
+        totalsueldo.appendChild(novdia);
+
+SUMAR.disabled=true;
+
+let totalgastado = document.getElementById('totalgastado');
+let totgast = (robertodia+segundia+tercerdia+cuartodia+quintodia+sextdia+sevendia+octavodia+novenodia);
+
+totalgastado.innerHTML="Total Gastado en personal este mes: "+totgast+" Gs";
+totalgastado.style.display='block';
+
+
    
-//}
-//else {console.log("No se pudo calcular")}
-//}
+}
+else {
+OCULTARERROR.style.display='block';
+}}
 
