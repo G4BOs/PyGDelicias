@@ -106,6 +106,9 @@ img:hover {
   scale: 0.9;
   
 }
+.alimento:hover{
+  scale: 1.5;
+}
 #inventarioimg{border: 1px solid #18022d;padding: 5px;}
 */
 /*estilos para la galeria */
