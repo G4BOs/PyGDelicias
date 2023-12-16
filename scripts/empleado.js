@@ -1,52 +1,14 @@
-let empleados = [{
-    nombre: "Roberto Ortiz",
-    cargo: "Pastelero Jefe",
-    salario:5000000,
-    pordia:166000,
-},{
-    nombre: "Valeria Torres",
-    cargo: "Asistente de Pasteleria",
-    salario:5000000,
-    pordia:166000,
-},{
-    nombre: "Natalia Ferreira",
-    cargo: "Chef de Cocina",
-    salario:3000000,
-    pordia:100000,
-},{
-    nombre: "Marta Gonzales",
-    cargo: "Asistente de Cocina",
-    salario:3000000,
-    pordia:100000,
-},{
-    nombre: "Luis Silva",
-    cargo: "Limpiador de Cocina",
-    salario:2500000,
-    pordia:83000,
-},{
-    nombre: "Carlos Gimenez",
-    cargo: "Repartidor a domicilio",
-    salario:3000000,
-    pordia:100000,
-},{
-    nombre: "Maria Diaz",
-    cargo: "Vendedor",
-    salario:6000000,
-    pordia:200000,
-},{
-    nombre: "Pedro Benitez",
-    cargo: "Repositor de Mercaderia",
-    salario:4000000,
-    pordia:133000,
-},{
-    nombre: "Ana Ramirez",
-    cargo: "Administrador",
-    salario:8000000,
-    pordia:266000,
-}];
+let empleados = [];
+
+
+fetch('https://sheet.best/api/sheets/9c8e16cc-6b8c-420b-885d-a4e1ef42dd78').then(response=>response.json()).then(data=>{empleados=data;ver()})
+
+.catch(error=>{console.error('Error obteniendo API')})
+
+
 
 //Botones
-const VER = document.getElementById('ver');
+
 const TOTAL= document.getElementById('calcular');
 const SUMAR = document.getElementById('sumar');
 
@@ -57,7 +19,7 @@ const SUMAR = document.getElementById('sumar');
 
 document.addEventListener("DOMContentLoaded",ver);
 
-//VER.addEventListener("click",ver);
+
 SUMAR.addEventListener("click",calcular);
 
 //Planilla
@@ -164,4 +126,4 @@ totalgastado.style.display='block';
 else {
 OCULTARERROR.style.display='block';
 }}
-
+document.addEventListener("DOMContentLoaded",ver);
