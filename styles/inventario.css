@@ -79,10 +79,6 @@ h1{
   text-align: center;
 }
 
-img{
-  width: 50px;
-  height: 50px;
-}
 .titulo{
   float: left;
   padding-left: 20px;
@@ -91,7 +87,6 @@ img{
   width: 100%;
   text-align: center;
 }
-
 
 .registro, .info{
   height: 200px;
@@ -117,7 +112,8 @@ img{
 }
 
 .grid-container {
-  padding-left: 70px;
+  padding-left: 75px;
+  padding-right: 10px;
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
   grid-auto-rows: 200px;
@@ -127,9 +123,9 @@ img{
 }
 
 img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
+  width: 150px;
+  height: 150px;
+  object-fit: fill;
 }
 
 /* Agrega un estilo para los contenedores div dentro de grid-container */
