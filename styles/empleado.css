@@ -184,14 +184,16 @@ body{
   button{
     border-radius: 5px;
     background-color: #684396;
-    font-size: 18px;
+    font-size: 20px;
     border: solid 1px #1a0241;
-    color: #fff;
+    color: #fff;height: 50px;width: 100px;
   }
   
   button:hover{
     background-color: #1a0241;
   }
+
+  button:active{scale: 0.95;}
   #ver{margin-top: 10px;}
 
   li{margin-bottom: 15px;text-align: start;}
