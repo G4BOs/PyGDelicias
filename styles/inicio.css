@@ -24,3 +24,21 @@ h1{margin-left: auto;margin-right: auto; font-weight: bold;font-size: 40px;margi
 #cerrarsesion{border: none;height: 30px;background-color: #cbc0d8;font-size: 16px;font-weight: bold;border-radius: 14px;}
 #cerrarsesion:hover{background-color: #9a80b8;cursor: pointer;}
 #cerrarsesion:active{scale: 0.95;}
+
+.info{
+    height: 200px;
+    width: 100%;
+    background-color: #1a0241;
+    padding: 20px;
+    text-align: center;
+    position: relative;
+    margin-top: 120px;
+  }
+
+.importantes{
+    display: inline-block;
+    border: 2px solid #18022d;
+    padding: 20px;
+    color: #cbc0d8;
+    
+}
