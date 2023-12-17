@@ -72,13 +72,6 @@ h1{
   color: #fff;
 }
 
-.registro, .info{
-  height: 200px;
-  width: 100%;
-  background-color: #1a0241;
-  padding: 20px;
-  text-align: center;
-}
 
 .titulo{
   float: left;
@@ -86,14 +79,6 @@ h1{
   background-color: #684396;
   color: #fff;
   width: 100%;
-  text-align: center;
-}
-
-.registro, .info{
-  height: 200px;
-  width: 100%;
-  background-color: #1a0241;
-  padding: 20px;
   text-align: center;
 }
 
@@ -114,7 +99,7 @@ img:hover {
 /*estilos para la galeria */
 #ventanaPrincipal {
   overflow: auto;
-  max-height: 100%; /* Establece una altura máxima para que aparezca la barra de desplazamiento cuando sea necesario */
+  max-height: 100%; 
 }
 
 .grid-container {
@@ -129,7 +114,7 @@ img:hover {
 }
 #ventanaPrincipal {
   overflow: auto;
-  max-height: 100%; /* Establece una altura máxima para que aparezca la barra de desplazamiento cuando sea necesario */
+  max-height: 100%; 
 }
 
 .alimento {
